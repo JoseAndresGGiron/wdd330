@@ -1,0 +1,108 @@
+{
+  "cuisines": [
+    {
+      "name": "African",
+      "url": "/api/cuisines/african"
+    },
+    {
+      "name": "American",
+      "url": "/api/cuisines/american"
+    },
+    {
+      "name": "British",
+      "url": "/api/cuisines/british"
+    },
+    {
+      "name": "Cajun",
+      "url": "/api/cuisines/cajun"
+    },
+    {
+      "name": "Caribbean",
+      "url": "/api/cuisines/caribbean"
+    },
+    {
+      "name": "Chinese",
+      "url": "/api/cuisines/chinese"
+    },
+    {
+      "name": "Eastern European",
+      "url": "/api/cuisines/eastern-european"
+    },
+    {
+      "name": "European",
+      "url": "/api/cuisines/european"
+    },
+    {
+      "name": "French",
+      "url": "/api/cuisines/french"
+    },
+    {
+      "name": "German",
+      "url": "/api/cuisines/german"
+    },
+    {
+      "name": "Greek",
+      "url": "/api/cuisines/greek"
+    },
+    {
+      "name": "Indian",
+      "url": "/api/cuisines/indian"
+    },
+    {
+      "name": "Irish",
+      "url": "/api/cuisines/irish"
+    },
+    {
+      "name": "Italian",
+      "url": "/api/cuisines/italian"
+    },
+    {
+      "name": "Japanese",
+      "url": "/api/cuisines/japanese"
+    },
+    {
+      "name": "Jewish",
+      "url": "/api/cuisines/jewish"
+    },
+    {
+      "name": "Korean",
+      "url": "/api/cuisines/korean"
+    },
+    {
+      "name": "Latin American",
+      "url": "/api/cuisines/latin-american"
+    },
+    {
+      "name": "Mediterranean",
+      "url": "/api/cuisines/mediterranean"
+    },
+    {
+      "name": "Mexican",
+      "url": "/api/cuisines/mexican"
+    },
+    {
+      "name": "Middle Eastern",
+      "url": "/api/cuisines/middle-eastern"
+    },
+    {
+      "name": "Nordic",
+      "url": "/api/cuisines/nordic"
+    },
+    {
+      "name": "Southern",
+      "url": "/api/cuisines/southern"
+    },
+    {
+      "name": "Spanish",
+      "url": "/api/cuisines/spanish"
+    },
+    {
+      "name": "Thai",
+      "url": "/api/cuisines/thai"
+    },
+    {
+      "name": "Vietnamese",
+      "url": "/api/cuisines/vietnamese"
+    }
+  ]
+}

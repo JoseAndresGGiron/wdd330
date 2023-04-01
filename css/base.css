@@ -1,0 +1,29 @@
+:root {
+    --color1: #fffffe;
+    --color2: #f3b700;
+    --color3: #1b2d45;
+    --color4: #008938;
+    --color5: #fffffe;
+    --color6: #f582ae;
+}
+
+body {
+    max-width: 1280px;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#banner {
+    display: none;
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    background-color: #f9e45b;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
