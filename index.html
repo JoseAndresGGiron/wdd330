@@ -28,44 +28,28 @@
     <!-- HEADER HERE -->
     <header>
         <div class="container-logo">
-            <img class="logos" id="top" src="images/logo/logotop2.webp" alt="Logo">
-        </div>
-
-        <!-- SOCIAL MEDIA LOGOS LINKS-->
-        <div id="social">
-            <div class="socialMediaIcons">
-                <a href="http://facebook.com" target="_blank"><img src="images/socialmedia/facebook.png"
-                        alt="Facebook Logo"></a>
-            </div>
-            <div class="socialMediaIcons">
-                <a href="http://twitter.com" target="_blank"><img src="images/socialmedia/twitter.png"
-                        alt="twitter Logo"></a>
-            </div>
-            <div class="socialMediaIcons">
-                <a href="http://instagram.com" target="_blank"><img src="images/socialmedia/instagram.png"
-                        alt="Instagram Logo"></a>
-            </div>
+            <a href="">
+                <h1>RecipeFinder&#x1F50E;</h1>
+                <h2>What are you eating today?</h2>
+            </a>
         </div>
         <!-- NAVIGATION HERE -->
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <nav>
-            <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="fresh.html">Fresh</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
+            <a href=""><img class="logos" id="top" src="src/images/save-instagram.png" alt="Logo"></a>
         </nav>
     </header>
     <!-- CONTENT HERE -->
     <main id="mainIndex">
-        <form>
-            <input type="text" id="search-bar" placeholder="Search for recipes...">
-            <button type="submit" id="search-btn">Search</button>
+        <form id="searhBarContainer">
+            <input class="form__field" type="text" id="search-bar" placeholder="   Search for recipes...">
+            <button class="btnHomePage" type="submit" id="search-btn">Search</button>
+            <button class="btnHomePage" onclick="randomRecipes()" id="randomSearch-btn">Random Search!</button>
         </form>
-        <button onclick="randomRecipes()" id="randomSearch-btn">Random Search!</button>
-        <div id="cuisines-container">
+
+
+        <ul id="cuisine-container">
             <!-- Anchor tags for cuisines will be added here -->
-        </div>
+        </ul>
         <ul id="recipe-container"></ul>
     </main>
     <!-- FOOTER HERE -->

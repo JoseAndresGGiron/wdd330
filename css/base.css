@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@700&family=Slackey&display=swap');
+
 :root {
     --color1: #fffffe;
     --color2: #f3b700;
@@ -7,12 +9,62 @@
     --color6: #f582ae;
 }
 
+/* Header Style Start */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    min-height: 9vw;
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #C9CCD1;
+}
+
+.container-logo a>* {
+    margin: 0.3em 0;
+}
+
+header>* {
+    padding: 1em 0.3em;
+    margin: 0em 1em 0em 0.3em;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    color: #008000;
+
+}
+
+header h2 {
+    font-size: 1.4vw;
+    color: #002C00;
+
+}
+
+.container-logo a {
+    color: #1b2d45;
+}
+
+.container-logo a:link {
+    text-decoration: none;
+    /* color: black; */
+}
+
+nav a img {
+    border-style: none;
+    width: 2rem;
+}
+
+/* Header Style End*/
+
 body {
-    max-width: 1280px;
-    font-family: 'Chelsea Market', cursive;
+    background-color: #F0F2F5;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    margin: 0 auto;
-    padding: 10px;
 }
 
 #banner {
@@ -26,4 +78,161 @@ body {
     text-align: center;
 }
 
+main#mainIndex {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+}
 
+form#searhBarContainer {
+    gap: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/*Form Field Input*/
+input#search-bar {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.form__field {
+    padding: 0.5em 0;
+
+}
+
+ul#cuisine-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    padding: 0;
+}
+
+ul#cuisine-container li {
+    display: flex;
+    align-items: center;
+    margin: 0.4vh 1vw;
+    border-radius: 70% 30% 62% 38% / 33% 65% 35% 67%;
+    border: 5px outset green;
+    padding: 0.3em 1em;
+    list-style-type: none;
+    height: 5vw;
+    background: rgb(0, 128, 0);
+    background: linear-gradient(336deg, rgba(0, 128, 0, 0.8324579831932774) 1%, rgba(0, 44, 0, 0.8352591036414566) 95%);
+}
+
+ul#cuisine-container li a {
+    color: white;
+
+}
+
+ul#cuisine-container li:hover {
+    background: rgb(0, 128, 0);
+    background: linear-gradient(153deg, rgba(0, 128, 0, 0.8240546218487395) 1%, rgba(0, 44, 0, 0.8268557422969187) 95%);
+    transform: rotate(-1deg);
+}
+
+ul#cuisine-container li a:link {
+    text-decoration: none;
+
+}
+
+/*Recipe Container Start*/
+ul#recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px 10px;
+    margin: auto 0px;
+    flex-direction: row;
+    padding: 0;
+}
+
+ul#recipe-container li {
+    max-width: 400px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 4px green;
+    box-shadow: 16px 12px 5px -6px rgba(0, 0, 0, 0.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 1em;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+ul#recipe-container li a img {
+    width: 100%;
+}
+
+/*Button*/
+
+.btnHomePage {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+}
+
+.btnHomePage:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.btnHomePage:main,
+.btnHomePage:focus {
+    user-select: auto;
+}
+
+.btnHomePage:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.btnHomePage:disabled {
+    cursor: auto;
+}
+
+/*Footer Style Start*/
+footer {
+    background-color: #FFFFFF;
+    border-top: 5px solid #C9CCD1;
+}

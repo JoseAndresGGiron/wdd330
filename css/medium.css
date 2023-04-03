@@ -1,4 +1,16 @@
 /* 45em is also 720px (if basefont is 16px) - Jose Giron */
 @media (min-width: 45em) {
     
+    form#searhBarContainer {
+        
+        flex-direction: row;
+    }
+    input#search-bar {
+        width: 76%;
+    }
+
+    ul#cuisine-container li {
+        padding: 0.1em 0.5em;
+        margin: 0.4vh 0.5vw;
+    }
 }
