@@ -13,4 +13,25 @@
         padding: 0.1em 0.5em;
         margin: 0.4vh 0.5vw;
     }
+
+    /*Recipe Details Page*/
+    main#recipes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+    main#recipes figure {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    main#recipes figure img{
+        min-width: 40%;
+    }
+    main#recipes p {
+        flex-basis: 100%;
+    }
+    main#recipes .instructions {
+        width: 50%;
+    }
 }

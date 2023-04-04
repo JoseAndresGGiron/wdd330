@@ -19,14 +19,14 @@ fetch(request)
     </figure>
     <p>Serves ${recipe.servings} - Ready in ${recipe.readyInMinutes} mins.</p>
     <ul class="ingredients">
-      <p>Ingredients:</p>
+      <h3>Ingredients:</h3>
   `;
         recipe.extendedIngredients.forEach(
             (ingr) => (text += `<li>${ingr.name}</li>`)
         );
-        text += `<h3>Instructions</h3> <p>${recipe.instructions ? recipe.instructions : recipe.summary}</p>`;
+        text += `</ul><div class="instructions"><h3>Instructions</h3> <p>${recipe.instructions ? recipe.instructions : recipe.summary}</p></div>`;
 
-        text += `</ul><p>Created by ${recipe.sourceName}. <a href="${recipe.spoonacularSourceUrl}">More info</a>.</p></div>`;
+        text += `<p>Created by ${recipe.sourceName}. <a href="${recipe.spoonacularSourceUrl}">More info</a>.</p></div>`;
 
         const recipes = document.querySelector('#recipes');
         recipes.insertAdjacentHTML("beforeend", text);
