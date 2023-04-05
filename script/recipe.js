@@ -3,16 +3,20 @@ let recipe;
 function saveRecipes() {
     // Retrieve existing recipes from local storage
     const existingRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
-
-    // Add new recipe to array
-    existingRecipes.push(JSON.stringify(recipe));
-
+  
+    // Add new recipe object to array containing only the required properties
+    existingRecipes.push({
+      title: recipe.title,
+      image: recipe.image,
+      ingredients: recipe.extendedIngredients,
+    });
+  
     // Save updated array back to local storage
     localStorage.setItem('savedRecipes', JSON.stringify(existingRecipes));
-
+  
     // Show success message to the user
     alert(`Recipe "${recipe.title}" saved successfully!`);
-}
+  }
 
 const urlParams = new URLSearchParams(window.location.search);
 const recipeId = urlParams.get('id');

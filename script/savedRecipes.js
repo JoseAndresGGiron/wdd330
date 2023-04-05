@@ -1,13 +1,16 @@
+document.cookie = 'cookieName=cookieValue; SameSite=None; Secure';
+
 function displayRecipes() {
-    const savedRecipes = JSON.parse(localStorage.getItem('savedRecipes'));
-  
-    if (savedRecipes === null) {
-      return;
-    }
-  
-    const savedRecipesContainer = document.querySelector('#savedRecipes');
-  
-    savedRecipes.forEach((recipe) => {
+  const savedRecipes = JSON.parse(localStorage.getItem('savedRecipes'));
+
+  if (savedRecipes === null) {
+    return;
+  }
+
+  const savedRecipesContainer = document.querySelector('#savedRecipes');
+
+  savedRecipes.forEach((recipe) => {
+    if (recipe && recipe.title) {
       const recipeHTML = `
         <div class="recipe">
           <h3>${recipe.title}</h3>
@@ -16,6 +19,8 @@ function displayRecipes() {
       `;
   
       savedRecipesContainer.insertAdjacentHTML('beforeend', recipeHTML);
-    });
-  }
-  
+    }
+  });
+}
+
+displayRecipes();
