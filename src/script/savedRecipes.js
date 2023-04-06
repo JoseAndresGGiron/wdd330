@@ -7,7 +7,7 @@ function displayRecipes() {
   if (savedRecipes === null || savedRecipes.length === 0) {
     const noRecipesHTML = `
       <h2>No saved recipes yet..</h2>
-      <h3>Find the best recipes<a href="/finalProject/wdd330/index.html"> here!</a> </h3>
+      <h3>Find the best recipes<a href="./../../index.html"> here!</a> </h3>
     `;
     savedRecipesContainer.insertAdjacentHTML('beforeend', noRecipesHTML);
     return;
