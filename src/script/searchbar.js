@@ -1,4 +1,3 @@
-
 const searchForm = document.querySelector('form');
 const recipeContainer = document.querySelector('#recipe-container');
 const randomSearch = document.querySelector('#randomSearch-btn');
@@ -67,15 +66,31 @@ function createRecipeCard(recipe) {
   const recipeCard = document.createElement('li');
   recipeCard.classList.add('recipe-card');
   recipeCard.innerHTML = `
-    <a><img src="${recipe.image}" alt="${recipe.title}"></a>
+    <a><img src="${recipe.image}" alt="${recipe.title} loading="lazy"></a>
     <h3>${recipe.title}</h3>`;
-  
+
 
   // add event listener to recipe card
   recipeCard.addEventListener('click', () => {
     const recipeId = recipe.id;
-    window.location.href = `recipe.html?id=${recipeId}`;
+    window.location.href = `src/html/recipe.html?id=${recipeId}`;
   });
 
   return recipeCard;
+}
+
+// Check if user has visited the page before
+if (!localStorage.getItem('visitedBefore')) {
+  // Show the banner
+  const banner = document.querySelector('#banner');
+  banner.classList.remove('hidden');
+
+  // Add event listener to close banner
+  const closeBtn = document.querySelector('#close-banner-btn');
+  closeBtn.addEventListener('click', () => {
+    banner.classList.add('hidden');
+  });
+
+  // Set visitedBefore to true so banner is not shown again
+  localStorage.setItem('visitedBefore', true);
 }

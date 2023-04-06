@@ -7,21 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finder | Home Page</title>
-    <!--Favicon Icon-->
-    <link rel="shortcut icon" href="">
-    <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fragment+Mono&family=Solway:wght@500&display=swap"
-        rel="stylesheet">
+   
     <!-- STYLE SHEETS -->
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="src/css/normalize.css" rel="stylesheet">
     <!-- phone-default -->
-    <link href="css/base.css" rel="stylesheet">
+    <link href="src/css/base.css" rel="stylesheet">
     <!-- enhance-tablet -->
-    <link href="css/medium.css" rel="stylesheet">
+    <link href="src/css/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
-    <link href="css/large.css" rel="stylesheet">
+    <link href="src/css/large.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,11 +29,27 @@
         </div>
         <!-- NAVIGATION HERE -->
         <nav>
-            <a href="savedRecipes.html"><img class="logos" id="top" src="src/images/save-instagram.png" alt="Logo"></a>
+            <a href="src/html/savedRecipes.html"><img class="logos" id="top" src="src/images/save-instagram.png" alt="Logo"></a>
         </nav>
     </header>
     <!-- CONTENT HERE -->
+    <div id="banner" class="hidden">
+        <h3>Welcome to your go-to destination for finding and sharing delicious recipes from around the
+            world!</h3>
+        <p>To help make your experience the best, here are some tips and tricks to get you started:</p> <p>Search through thousands of recipes using advanced filtering and ranking:</p>
+        <ul>
+            <li>Diet: for which the recipes must be suitable. <a href="https://spoonacular.com/food-api/docs#Diets" target="_blank" >See a full list of supported diets.</a> </li>
+            <li>The equipment required. Multiple values will be interpreted as 'or'. For example, value could be "blender, frying pan, bowl".</li>
+            <li>A comma-separated list of ingredients that should/must be used in the recipes.</li>
+            <li>Looking for more tips and tricks? Find them <a href="https://spoonacular.com/food-api/docs" target="_blank">here!</a></li>
+        </ul>
+        <button id="close-banner-btn" class="btnHomePage">Close</button>
+    </div>
+
     <main id="mainIndex">
+        <p> Discover delicious recipes from around the world! With a vast collection of dishes to
+            cater to all tastes and dietary needs, we'll inspire and delight you. </p>
+        <p> Let's explore the world of cooking together!</p>
         <form id="searhBarContainer">
             <input class="form__field" type="text" id="search-bar" placeholder="   Search for recipes...">
             <button class="btnHomePage" type="submit" id="search-btn">Search</button>
@@ -62,13 +72,9 @@
         </div>
 
     </footer>
-    <script src="script/searchbar.js"></script>
-    <script type="text/javascript" src="./script/recipe.js"></script>
-    <!-- <script src="script/weather.js"></script>
-    <script src="script/lastmodi.js"></script>
-    <script src="script/lazyload.js"></script>
-    <script src="script/count.js"></script> -->
-    <!--<script src="script/lazyload.js"></script>-->
+    <script src="src/script/searchbar.js"></script>
+    <!-- <script type="text/javascript" src="./script/recipe.js"></script> -->
+    
 </body>
 
 </html>

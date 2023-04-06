@@ -1,0 +1,79 @@
+/* 45em is also 720px (if basefont is 16px) - Jose Giron */
+@media (min-width: 45em) {
+
+    form#searhBarContainer {
+
+        flex-direction: row;
+    }
+
+    input#search-bar {
+        width: 76%;
+    }
+
+    ul#cuisine-container li {
+        padding: 0.1em 0.5em;
+        margin: 0.4vh 0.5vw;
+    }
+
+    /*Recipe Details Page*/
+    main#recipes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 5rem;
+    }
+
+    main#recipes figure {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    main#recipes figure img {
+        min-width: 40%;
+    }
+
+    main#recipes p {
+        flex-basis: 100%;
+    }
+
+    main#recipes .instructions {
+        width: 50%;
+    }
+
+    form.comment-form {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .comment-form button {
+        align-self: end;
+    }
+
+    /*Saved Recipes*/
+    main#savedRecipes {
+        min-height: 55vh;
+    }
+    .recipe {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*Banner*/
+    #banner {
+        min-height: 17%;
+        max-height: 50%;
+        background-color: #82e8b9;
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #banner button {
+        align-self: end;
+        margin-right: 1.5em;
+    }
+}
