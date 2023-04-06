@@ -1,0 +1,88 @@
+body {
+    margin: auto;
+    max-width: 728px;
+}
+
+main {
+    display: block;
+    text-align: center;
+    min-height: 62.7vh;
+}
+
+h1 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Sura', serif;
+}
+
+header {
+    display: flex;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+    /* background-color: #a6d8f5; */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 19%, rgba(166, 216, 245, 1) 100%, rgba(252, 176, 69, 1) 100%);
+}
+
+footer {
+    border-radius: 25px;
+    box-shadow: 5px 10px;
+    text-align: center;
+    background-color: #a6d8f5;
+    font-family: 'Sura', serif;
+    font-size: 20px;
+    min-height: 5rem;
+    display: flex;
+}
+
+footer p {
+    margin: auto;
+}
+
+.wdd230 {
+    border-bottom: 3px solid grey;
+}
+
+#img-container {
+    width: 168px;
+    height: 186.14px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.guapo {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    font-family: 'Sura', serif;
+    font-size: 1.3rem;
+    display: inline-block;
+
+}
+
+li {
+    padding: calc(8px + 0vw);
+    text-align: left;
+}
+li a{
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 1.3em;
+}
+
+img {
+    border-style: none;
+
+}
